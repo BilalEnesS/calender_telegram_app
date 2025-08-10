@@ -13,4 +13,6 @@ services:
         sync: false
       - key: TIMEZONE
         value: Europe/Istanbul
+      - key: PYTHON_VERSION
+        value: 3.11.9
     plan: free
