@@ -136,7 +136,7 @@ def calendar_tool_func(command: str) -> str:
     Prompt ile bu işi LLM'ye yaptıracağız.
     """
 
-    llm = OpenAI(temperature=0)
+    llm = OpenAI(model="gpt-3.5-turbo-instruct", temperature=0)
     
     # Bugünün tarihini al
     today = datetime.datetime.now()
@@ -227,7 +227,7 @@ calendar_tool = Tool(
 )
 
 # LangChain Agent oluştur
-llm = OpenAI(model="gpt-4o-mini", temperature=0)
+llm = OpenAI(model="gpt-3.5-turbo-instruct", temperature=0)
 agent = initialize_agent(
     [calendar_tool], 
     llm, 
