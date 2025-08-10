@@ -6,7 +6,7 @@ import logging
 from dotenv import load_dotenv
 
 from langchain.agents import initialize_agent, Tool
-from langchain_openai import OpenAI
+from langchain.llms import OpenAI
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 

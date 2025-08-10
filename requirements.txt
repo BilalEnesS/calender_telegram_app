@@ -1,11 +1,9 @@
 # Telegram Bot
 python-telegram-bot==20.7
 
-# OpenAI ve LangChain (Render uyumlu versiyonlar)
-langchain==0.0.200
-openai==1.6.1
-langchain-openai==0.0.2
-langchain-community==0.0.6
+# OpenAI ve LangChain (tiktoken olmadan)
+langchain==0.0.100
+openai==0.28.1
 
 # Google Calendar API
 google-auth==2.23.4
