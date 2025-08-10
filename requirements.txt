@@ -1,5 +1,5 @@
 # Telegram Bot
-python-telegram-bot==20.7
+python-telegram-bot==20.6
 
 # OpenAI ve LangChain (tiktoken olmadan)
 langchain==0.0.100
