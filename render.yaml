@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: telegram-calendar-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: TELEGRAM_TOKEN
+        sync: false
+      - key: GOOGLE_EMAIL
+        sync: false
+      - key: TIMEZONE
+        value: Europe/Istanbul
+    plan: free
