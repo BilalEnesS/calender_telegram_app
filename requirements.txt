@@ -14,5 +14,4 @@ google-api-python-client==2.108.0
 
 # Environment Variables
 python-dotenv==1.0.0
-imghdr
 
