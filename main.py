@@ -227,7 +227,7 @@ calendar_tool = Tool(
 )
 
 # LangChain Agent oluştur
-llm = OpenAI(temperature=0)
+llm = OpenAI(model="gpt-4o-mini", temperature=0)
 agent = initialize_agent(
     [calendar_tool], 
     llm, 
