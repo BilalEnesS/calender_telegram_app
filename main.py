@@ -173,7 +173,7 @@ JSON şu formatta olmalı:
 Komut: '''{command}'''
 """
 
-    response = llm.predict(prompt)
+    response = llm(prompt)
 
     try:
         data = json.loads(response)
